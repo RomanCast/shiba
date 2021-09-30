@@ -7,7 +7,7 @@ datasets
 fugashi==1.1.0
 tqdm
 jsonlines
-mpi4py
+# mpi4py
 transformers==4.6.1
 conllu==4.4 # universal dependencies
 wandb

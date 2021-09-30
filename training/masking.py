@@ -234,7 +234,7 @@ def random_span_mask(input_ids: torch.Tensor, attention_mask: torch.Tensor, repl
 
 
 class RandomSpanMaskingDataCollator:
-    tokenizer_vocab_loc = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'bpe_vocab.json')
+    tokenizer_vocab_loc = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tokenizer.json')
     special_tokens = SPECIAL_TOKENS_WITHOUT_PADDING | {CodepointTokenizer.PAD}
 
     def __init__(self, tokenizer: CodepointTokenizer, bpe_span_selection: bool):
